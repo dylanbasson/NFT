@@ -20,7 +20,7 @@
         xhr.send(new Blob([aBody]));
         xhr.onreadystatechange = function() {
     	    if (xhr.readyState === 4) {
-      	    callback(xhr.response);
+      	    console.log(xhr.response);
     	  }
       	}
     </script>
