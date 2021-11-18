@@ -8,8 +8,8 @@
       function submitRequest()
       {
         var xhr = new XMLHttpRequest();
-        xhr.open("GET", "https://sockets.ashleymadison.com", true);
-        xhr.setRequestHeader("accept", "application/json, text/plain, */*");
+        xhr.open("GET", "https://sockets.ashleymadison.com/socket.io/1/", true);
+        xhr.setRequestHeader("accept", "*/*");
         xhr.setRequestHeader("accept-language", "en-GB,en-US;q=0.9,en;q=0.8");
         xhr.withCredentials = true;
         xhr.send();
