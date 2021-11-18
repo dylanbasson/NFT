@@ -12,7 +12,7 @@
         xhr.setRequestHeader("accept", "application/json, text/plain, */*");
         xhr.setRequestHeader("accept-language", "en-GB,en-US;q=0.9,en;q=0.8");
         xhr.withCredentials = true;
-        xhr.send(JSON.stringify(params));
+        xhr.send();
           xhr.onreadystatechange = function() {
     	    if (xhr.readyState === 4) {
       	    console.log(xhr.response);
