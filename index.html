@@ -4,7 +4,7 @@
       function submitRequest()
       {
         var xhr = new XMLHttpRequest();
-        xhr.open("GET", "http://dev.epicgames.com/portal/csrf-token", true);
+        xhr.open("GET", "https://dev.epicgames.com/portal/api/csrf-token", true);
         xhr.setRequestHeader("accept-language", "en-US,en;q=0.5");
         xhr.withCredentials = true;
         var body = "";
