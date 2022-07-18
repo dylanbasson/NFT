@@ -3,21 +3,20 @@
   "description": "Generative art on Solana.",
   "image": "https://bafybeiby5kmmnntpmlz5fukpofstjdyg3mkyag2si2yurxocd7qffkbgsq.ipfs.nftstorage.link/6840.png?ext=png",
   "external_url": "https://example.com",
-  "redeemed_bottle":false,
   "attributes": [
     {
-      "trait_type": "trait1",
-      "value": "value1"
+      "trait_type": "Redeemed Bottle",
+      "value": false
     },
     {
-      "trait_type": "trait2",
-      "value": "value2"
+      "trait_type": "Type",
+      "value": "Red Wine"
     }
   ],
   "properties": {
     "files": [
       {
-        "uri": "https://www.arweave.net/abcd5678?ext=png",
+        "uri": "https://bafybeiby5kmmnntpmlz5fukpofstjdyg3mkyag2si2yurxocd7qffkbgsq.ipfs.nftstorage.link/6840.png?ext=png",
         "type": "image/png"
       }
     ],
