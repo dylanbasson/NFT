@@ -6,7 +6,7 @@
   "attributes": [
     {
       "trait_type": "Redeemed Bottle",
-      "value": false
+      "value": "No"
     },
     {
       "trait_type": "Type",
@@ -14,7 +14,7 @@
     },
     {
       "trait_type": "First Sold",
-      "value": "None"
+      "value": "Unsold"
     }
   ],
   "properties": {
